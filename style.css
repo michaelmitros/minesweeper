@@ -1,0 +1,50 @@
+/* Add styles for the Minesweeper game */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-top: 20px;
+    color: #343a40;
+}
+
+#game-board {
+    display: grid;
+    justify-content: center;
+    gap: 2px;
+    margin: 20px auto;
+    max-width: 400px;
+    background: #ced4da;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #343a40;
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #6c757d;
+    color: #f8f9fa;
+    border: none;
+    outline: none;
+}
+
+.cell.revealed {
+    cursor: default;
+    background-color: #e9ecef;
+    color: #212529;
+}
+
+.cell.flagged {
+    color: #ffc107;
+    font-weight: bold;
+}
